@@ -4,10 +4,12 @@
   "main": "src/index.js",
   "license": "MIT",
   "scripts": {
-    "make": "sucrase-node src/index.js",
+    "make:docx": "sucrase-node src/index.js",
+    "make:csv": "sucrase-node src/csv.js",
     "eslint:fix": "eslint --fix src --ext .js"
   },
   "dependencies": {
+    "csv-writer": "^1.6.0",
     "docx": "^5.0.2",
     "file-saver": "^2.0.2",
     "moment": "^2.24.0"
